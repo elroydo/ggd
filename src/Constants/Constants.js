@@ -1,4 +1,4 @@
-export const SERVER_URL = 'http://localhost:8080/';
+export const SERVER_URL = 'https://ggd-unsdg-back.herokuapp.com/';
 
 export const ACCESS_TOKEN_NAME = 'jwtAccessToken';
 
