@@ -1,0 +1,98 @@
+.todo-app {
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin-top:30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 30px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+.todo-input {
+  padding: 10px 30px;
+  border: 2px solid #ebeaea;
+  border-radius: 30px;
+  outline: none;
+  width: 420px;
+  background: transparent;
+  color: black;
+  margin-right: 10px;
+}
+
+.todo-input::placeholder {
+  color: grey;
+}
+
+.todo-button {
+  text-decoration: none;
+  padding: 11px;
+  margin-top: 30px;
+  color: #ffffff;
+  background-color: #009664;
+  border-color: #00966448;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.todo-button:hover {
+  background-color: white;
+  border-color: #00966448;
+  color: black;
+}
+
+.todo-container {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  color: black;
+  border-style: solid;
+  border-color: white;
+  background-color:#F8F8F8 ;
+  padding: 16px;
+  border-radius: 50px;
+  width: 90%;
+  margin-top: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: black;
+  cursor: pointer;
+}
+
+
+.delete-icon > g > path{
+  color: black;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: black;
+}

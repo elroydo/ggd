@@ -1,0 +1,306 @@
+[
+  {
+    "Year": "2001",
+    "Brazil": 2.75,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 1.36,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 0.744,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 1.85,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.94,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 4.74,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2002",
+    "Brazil": 3.51,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.32,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 0.855,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 2.7,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.04,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 5.03,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2003",
+    "Brazil": 3.25,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 1.61,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 0.545,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 3.03,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.65,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 4.4,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2004",
+    "Brazil": 3.85,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.71,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.29,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 3.52,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.75,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 5.8,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2005",
+    "Brazil": 3.49,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.92,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.18,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 1.59,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.69,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 6.23,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2006",
+    "Brazil": 2.88,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.41,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.43,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 2.23,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.61,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 6.09,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2007",
+    "Brazil": 2.62,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.12,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.39,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 2.34,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.44,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 7.49,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2008",
+    "Brazil": 2.44,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 1.95,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.4,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 3.05,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.21,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 7.56,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2009",
+    "Brazil": 1.82,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 1.55,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.94,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 2.11,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.61,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 7.96,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2010",
+    "Brazil": 2.69,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.1,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.28,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 1.86,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.17,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 8.45,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2011",
+    "Brazil": 1.92,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.16,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.54,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 3.02,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.66,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 7.27,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2012",
+    "Brazil": 5.39,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.55,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 2.26,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 5.39,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.96,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 8.45,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2013",
+    "Brazil": 1.95,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.81,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.14,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 4.97,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.74,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 8.05,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2014",
+    "Brazil": 2.69,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.64,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.89,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 4.49,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 1.74,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 10.3,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2015",
+    "Brazil": 2.22,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.73,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.75,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 2.33,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.29,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 8.3,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2016",
+    "Brazil": 5.38,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.03,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 2.42,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 5.05,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.26,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 12.5,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2017",
+    "Brazil": 4.52,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.56,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.3,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 5.29,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.31,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 13.4,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2018",
+    "Brazil": 2.95,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.14,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.22,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 5.56,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.09,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 10.8,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  },
+
+  {
+    "Year": "2019",
+    "Brazil": 3.69,
+    "BrazilColor": "hsl(127, 70%, 50%)",
+    "Canada": 2.18,
+    "CanadaColor": "hsl(323, 70%, 50%)",
+    "Indonesia": 1.18,
+    "IndonesiaColor": "hsl(137, 70%, 50%)",
+    "Russia": 3.69,
+    "RussiaColor": "hsl(123, 70%, 50%)",
+    "United States": 2.11,
+    "UnitedStatesColor": "hsl(300, 70%, 50%)", 
+    "Other": 12.3,
+    "OtherColor": "hsl(300, 70%, 50%)"
+  }
+
+]

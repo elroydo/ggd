@@ -1,0 +1,15 @@
+.message-container {
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}

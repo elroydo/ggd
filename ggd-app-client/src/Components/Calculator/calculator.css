@@ -1,0 +1,379 @@
+.calculator-main {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.calculator-background {
+  background-color: #4bdae9;
+  background-image: url("../../Images/grass.png"), url("../../Images/clouds.png");
+  background-size: 50vh, 90vh;
+  background-repeat: repeat-x;
+  background-position: bottom 0px right 0px, center 1rem;
+}
+
+.calculator-container {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+
+.calculator-wrapper {
+  padding: 3vmin;
+  min-height: max-content;
+}
+
+.question-container {
+  padding: 15px;
+  text-align: center;
+  height: 32rem;
+  width: 50%;
+  position: relative;
+}
+
+.question {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.question-option {
+  margin-bottom: 10px;
+  width: 100%;
+  color: black;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.calculator-options {
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.calculator-options label:hover {
+  color: #124512;
+  background-color: #e0e0e0;
+  border-color: #ffffff00;
+  border-radius: 30px;
+}
+
+.calculator-options label {
+  text-align: left;
+  width: 100%;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 30px;
+}
+
+.question-option input[type="radio"] {
+  /*float: right;
+  margin-top: 4px;*/
+  visibility:hidden;
+}
+
+.selected-option {
+  box-shadow: 0px 0px 0px 3px #1bac817e;
+  border-color: #019e6f;
+  background-color: #1bac80;
+  color: #ffffff;
+}
+
+.calculator-graph-containter {
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.calculator-graph {
+  height: 18em;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0.6em;
+}
+
+.calculator-graph-key-wrapper {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.cg-key {
+  display: inline; 
+  padding-right: 15px;
+}
+
+.cg-key-colour {
+  display: inline-block;
+  margin-right: 5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.info-container {
+  padding: 15px;
+}
+
+.info-wrapper {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 30px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.info-item {
+  height: 100%;
+  margin: 0px;
+  transition: 0.3s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.info-title {
+  font-size: 2rem;
+}
+
+.info-sub-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  padding: 0.7rem 0 0.7rem 0;
+}
+
+.info-image-wrapper {
+  width: 100%;
+  background-size: 4rem;
+  background-position: center;
+  border-radius: 30px;
+}
+
+.info-image-wrapper.oranges {
+  background-image: url("../../Images/oranges.png");
+}
+
+.info-image-wrapper.gauge {
+  background-image: url("../../Images/gauge.png");
+}
+
+.info-image-wrapper.plane {
+  background-image: url("../../Images/plane.png");
+}
+
+.info-image-wrapper.weather {
+  background-image: url("../../Images/weather.png");
+}
+
+.info-image-wrapper.dvds {
+  background-image: url("../../Images/dvds.png");
+}
+
+.info-image {
+  width: 15rem;
+}
+
+.progress {
+  padding: 0;
+  margin-top: 5vh;
+  box-shadow: rgba(99, 99, 99, 0.068) 0px 2px 8px 0px;
+}
+
+.facts-wrapper {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.facts {
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  flex: 1.5;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.facts {
+  background-color: #fff;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.facts p {
+  width: 60%;
+  margin: auto;
+}
+
+.calc-button {
+  margin: 1rem;
+  height: 3rem;
+  color: #124512;
+  background-color: #ffffff;
+  border-color: #f3f3f3;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.calc-button:hover {
+  border-color: #124512;
+}
+
+.calculator-back-button-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #124512;
+}
+
+.calculator-back-button-icon > path {
+  cursor: pointer;
+}
+
+.calculator-options label {
+  text-align: left;
+}
+
+.progress-bar-wrapper {
+  margin: 0 auto;
+}
+
+.progress {
+  background-color: #dfdfdf;
+  border-radius: 30px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.bg-success {
+  color: rgb(255, 255, 255);
+  background-color: #1bac80 !important;
+}
+
+.progress-bar.fade {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.results-wrapper {
+  transition: opacity, width 1s ease-in-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.bookmark-login {
+  text-align: center;
+}
+
+.calculator-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #124512;
+  font-weight: 400;
+}
+
+.calculator-link:hover {
+  text-decoration: underline;
+  color: #124512;
+}
+
+.fade-in {
+  padding: 0 1rem 0 1rem;
+  opacity: 1;
+  height: auto;
+  width: unset;
+}
+
+
+.calculator-bg {
+  background-image: url("../../Images/clouds.png");
+  background-position: top;
+  background-size: 20rem;
+}
+
+.not-possible {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end);
+}
+
+.message {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end);
+}
+
+.swal2-popup {
+  border-radius: 50px;
+}
+
+.swal2-confirm.swal2-styled {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #009664;
+  border-color: #00966448 !important;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.swal2-confirm.swal2-styled:hover {
+  background-color: white;
+  border-color: #00966448 !important;
+  color: black;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+    margin: 0 auto;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+    margin: 0 auto;
+  }
+}
+
+@-moz-keyframes type {
+  from {
+    width: 0;
+    margin: 0 auto;
+  }
+}
+
+@keyframes moveCloud {
+  0% {
+    -webkit-transform: translateX(100);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes moveCloud {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes moveCloud {
+  0% {
+    -moz-transform: translateX(0);
+  }
+  100% {
+    -moz-transform: translateX(-200%);
+  }
+}

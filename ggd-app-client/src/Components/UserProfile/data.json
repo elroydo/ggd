@@ -1,0 +1,26 @@
+[
+  {
+    "overall": "You",
+    "Food": 78,
+    "FoodColor": "hsl(349, 70%, 50%)",
+    "Travel": 45,
+    "TravelColor": "hsl(252, 70%, 50%)",
+    "Home": 177,
+    "HomeColor": "hsl(102, 70%, 50%)",
+    "Stuff": 102,
+    "StuffColor": "hsl(79, 70%, 50%)"
+  },
+
+  {
+    "overall": "Global",
+    "Food": 30,
+    "FoodColor": "hsl(43, 70%, 50%)",
+    "Travel": 41,
+    "TravlColor": "hsl(167, 70%, 50%)",
+    "Home": 139,
+    "HomeColor": "hsl(52, 70%, 50%)",
+    "Stuff": 165,
+    "StuffColor": "hsl(114, 70%, 50%)"
+  }
+  
+]
