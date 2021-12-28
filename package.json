@@ -1,4 +1,5 @@
 {
+  "homepage": "https://elroydo.github.io/ggd",
   "name": "ggd",
   "proxy": "http://localhost:8080",
   "version": "0.1.0",
@@ -14,6 +15,7 @@
     "bootstrap": "^5.0.0-beta1",
     "crypto-js": "^4.0.0",
     "emailjs-com": "^2.6.4",
+    "gh-pages": "^3.2.3",
     "material-design-icons": "^3.0.1",
     "polished": "^4.0.5",
     "react": "^17.0.1",
@@ -35,6 +37,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
