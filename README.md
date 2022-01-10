@@ -1,5 +1,5 @@
 
-### Group 31
+### deployment being resolved...
 ![sadsae](https://user-images.githubusercontent.com/72175303/112560155-77568080-8dca-11eb-88cf-d5bb95393bf9.png)
 # GGD &middot; ![npm version](https://img.shields.io/npm/v/react.svg?style=flat) &middot; ![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.0-yellowgreen.svg) &middot; ![Java](https://img.shields.io/badge/Java-v11.0-orange.svg)
 We’re **raising awareness** and **providing insight** on the different types of pollution, climate-related hazards, land degradation, and natural disasters that are affecting various regions of the world, **enabling people** to take action by reducing their environmental footprint. Users can track and monitor their statistics with a personalised account and access reliable data and news sources through various mediums. All the while collectively working towards the following UN Sustainable Development Goals:
@@ -75,16 +75,14 @@ spring.datasource.username=root
 spring.datasource.password=toor
 ````
 ## Authors
-* **Rozerin Baran** (1905101)
-* **Keeley Gardner** (1904553)
-* **Marcos Rodriguez** (1832373)
-* **Elroy Do Rosario** (1812502)
-* **Rishi Herath Pathiranage** (1911183)
-* **Abdulaziz Jama** (1911210)
-* **Gan Villaruel** (1818181)
-* **Cyrus Lee** (1903268)
-
-See also the list of [contributors](https://github.com/BrunelCS/cs2001-2020_21-group31/contributors) who participated in this project.
+* **Rozerin**
+* **Keeley** 
+* **Marcos** 
+* **Elroy**
+* **Rishi**
+* **Abdulaziz** 
+* **Gan**
+* **Cyrus** 
 
 ## Acknowledgments
-* To the best tutor in the world, we extend our thanks to **Nayna Patel**.
+* We extend our utmost thanks to **Nayna**.
