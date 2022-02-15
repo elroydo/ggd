@@ -159,129 +159,116 @@ class Home extends Component {
         }
 
         return (
-            <div className="main" style={{ textAlign: 'center' }}>
+            <div className="main">
                 <div className="bga">
                     <div className="bg"></div>
                     <div className="bg bg2"></div>
                     <div className="bg bg3"></div>
                 </div>
-                <div className="page-heading" style={{ paddingTop: 30 }}>
-                    <h1 style={{ fontSize: '7rem', fontWeight: 'bold', marginTop: '1.3rem' }}>How are you impacting the planet?</h1>
+                <div className="header">
+                    <h1 className="page-heading">How are you impacting the planet?</h1>
                 </div>
-                <div className="mission-statement-container">
-                    <h1 className="mission-statement">
-                        We’re <b>raising awareness</b> and <b>providing insight</b> on the different types of pollution, climate-related hazards, land degredation, and natural disasters that are affecting various regions of the world, <b>enabling</b> people to take action by reducing their environmental footprint.
-                    </h1>
-                </div>
-                {!this.state.isScrolling &&
-                    <div className="more-content-wrapper">
-                        <BsChevronDown
-                            className="scroll-down-arrow"
-                            title="Scroll Down"
-                            style={{ cursor: 'pointer' }}
-                            onClick={() => window.scrollTo({
-                                top: 500,
-                                behavior: 'smooth'
-                            })}
-                        />
+                <div className="mission-statement">
+                    <div className="main-container">
+                        <h1>
+                            We're <b>raising awareness</b> and <b>providing insight</b> on the different types of pollution, climate-related hazards, land degredation, and natural disasters that are affecting various regions of the world, <b>enabling</b> people to take action by reducing their environmental footprint.
+                        </h1>
                     </div>
-                }
-                {this.state.isScrolling &&
-                    <div>
-                        <div className="united-nations-sustainable-development-goals">
-                            <div className="un-logo"></div>
-                            <div className="development-goals" style={{ display: 'inline-flex', margin: '0 auto' }}>
-                                <ClimateActionFlipCard />
-                                <LifeBelowWaterFlipCard />
-                                <LifeOnLandFlipCard />
-                            </div>
-                        </div>
-                        <div className="home-news-carousel-container">
-                            <div className="page-sub-heading" style={{ paddingBottom: 30 }}>
-                                <h3 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Top Stories</h3>
-                            </div>
-                            {newsAPIError ? <p>Could not fetch any articles. Please try again.</p> :
-                                <div className="row">
-                                    <div className="col">
-                                        <ArticleCard articles={articlesClimate} style={{ display: 'inline-block' }} />
-                                    </div>
-                                    <div className="col">
-                                        <ArticleCard articles={articlesDisaster} style={{ display: 'inline-block' }} />
-                                    </div>
-                                    <div className="col">
-                                        <ArticleCard articles={articlesWater} style={{ display: 'inline-block' }} />
-                                    </div>
-                                    <div className="col">
-                                        <ArticleCard articles={articlesLand} style={{ display: 'inline-block' }} />
-                                    </div>
-                                </div>
-                            }
-                        </div>
-
-                        <div className="subscribe-container">
-                            <h2 style={{ fontSize: '3rem', fontWeight: 'bold', paddingBottom: 5 }}>Subscribe to Our Going Green Digital newsletter</h2>
-                            <form onSubmit={(e) => { sendEMail(e); this.handleSubmit(e) }} noValidate>
-                                <div className="row" style={{ margin: '0 auto' }}>
-                                    <div className="col" style={{ padding: 0, marginRight: 3 }}>
-                                    <label style={{ fontSize: '1.1rem', fontWeight: '400', paddingBottom: 30, textAlign: 'left' }}>We'll send you occasional updates on what is happening around the planet. No spam, just the information you are after.</label>
-
-                                    </div>
-                                    <div className="col-1" style={{ padding: 0, marginLeft: 3 }}>
-                                        <BsInfoCircleFill style={{ margin: '0 !important', fontSize: '2rem' }} className="newsletter-info-button" onClick={() => { this.handleModal() }} />
-                                    </div>
-                                </div>
-                                <div style={{ marginBottom: 10 }}>
-                                    {formValidation.name.length > 0 && (
-                                        <p className="error-message" style={{fontSize: '1rem'}}>{formValidation.name}</p>
-                                    )}
-                                    <input 
-                                        type="name" 
-                                        className={formValidation.name.length > 0 ? "form-control register-input error" : "form-control register-input newsletter-input"} 
-                                        placeholder="Name" name="name" onChange={this.handleChange} size="small" 
-                                        style={{ padding: 9, paddingLeft: 20 }}    
-                                    />
-                                </div>
-
-                                <div style={{ marginBottom: 20 }}>
-                                    {formValidation.email.length > 0 && (
-                                        <p className="error-message" style={{fontSize: '1rem'}}>{formValidation.email}</p>
-                                    )}
-                                    <input
-                                        className={formValidation.email.length > 0 ? "form-control register-input error" :
-                                            "form-control newsletter-input register-input"}
-                                        type="email" placeholder="Email" name="email"
-                                        noValidate onChange={this.handleChange} size="small" 
-                                        style={{ padding: 9, paddingLeft: 20 }}  
-                                    />
-                                </div>
-                                <button className="btn btn-light register-button" 
-                                    onClick={this.subscribe, () => { sweetalertclick(); }} 
-                                    disabled={!allValid} type="submit" 
-                                    style={{ width: '50%' }}>
-                                        Subscribe
-                                </button>
-                            </form>
-
-                            
-                            <Modal show={this.state.show} >
-                                <Modal.Header style={{ fontWeight: 'bold', paddingLeft: '2rem' }} >Why Subscribe?</Modal.Header>
-                                <Modal.Body>
-                                    Updates from your local communities, 
-                                    information regarding any of our ongoing campaigns,
-                                    news related to any upcoming events, 
-                                    any new features that have been added to the webpage, and much more. So what are you waiting for? 
-                                    Sign up now!
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <Button onClick={() => { this.handleModal() }}>
-                                        Close
-                                    </Button>
-                                </Modal.Footer>
-                            </Modal>
-
+                    <div className="un-goals main-container">
+                        <div className="un-logo"></div>
+                        <div className="sustainable-goals">
+                            <ClimateActionFlipCard />
+                            <LifeBelowWaterFlipCard />
+                            <LifeOnLandFlipCard />
                         </div>
                     </div>
-                }
+                </div>
+                    
+                <div className="home-news main-container">
+                    <div className="page-sub-heading" style={{ paddingBottom: 30 }}>
+                        <h3 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Top Stories</h3>
+                    </div>
+                    {newsAPIError ? <p>Could not fetch any articles. Please try again.</p> :
+                        <div className="row news-articles">
+                            <div className="col-lg-3 news-article">
+                                <ArticleCard articles={articlesClimate} />
+                            </div>
+                            <div className="col-lg-3 news-article">
+                                <ArticleCard articles={articlesDisaster} />
+                            </div>
+                            <div className="col-lg-3 news-article">
+                                <ArticleCard articles={articlesWater} />
+                            </div>
+                            <div className="col-lg-3 news-article">
+                                <ArticleCard articles={articlesLand} />
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div className="subscribe">
+                    <div className="main-container">
+                        <h2 style={{ fontSize: '3rem', fontWeight: 'bold', paddingBottom: 5 }}>Subscribe to Our Going Green Digital newsletter</h2>
+                        <form onSubmit={(e) => { sendEMail(e); this.handleSubmit(e) }} noValidate>
+                            <div className="row" style={{ margin: '0 auto' }}>
+                                <div className="col" style={{ padding: 0, marginRight: 3 }}>
+                                <label style={{ fontSize: '1.1rem', fontWeight: '400', paddingBottom: 30, textAlign: 'left' }}>We'll send you occasional updates on what is happening around the planet. No spam, just the information you are after.</label>
+
+                                </div>
+                                <div className="col-1" style={{ padding: 0, marginLeft: 3 }}>
+                                    <BsInfoCircleFill style={{ margin: '0 !important', fontSize: '2rem' }} className="newsletter-info-button" onClick={() => { this.handleModal() }} />
+                                </div>
+                            </div>
+                            <div style={{ marginBottom: 10 }}>
+                                {formValidation.name.length > 0 && (
+                                    <p className="error-message" style={{fontSize: '1rem'}}>{formValidation.name}</p>
+                                )}
+                                <input 
+                                    type="name" 
+                                    className={formValidation.name.length > 0 ? "form-control register-input error" : "form-control register-input newsletter-input"} 
+                                    placeholder="Name" name="name" onChange={this.handleChange} size="small" 
+                                    style={{ padding: 9, paddingLeft: 20 }}    
+                                />
+                            </div>
+
+                            <div style={{ marginBottom: 20 }}>
+                                {formValidation.email.length > 0 && (
+                                    <p className="error-message" style={{fontSize: '1rem'}}>{formValidation.email}</p>
+                                )}
+                                <input
+                                    className={formValidation.email.length > 0 ? "form-control register-input error" :
+                                        "form-control newsletter-input register-input"}
+                                    type="email" placeholder="Email" name="email"
+                                    noValidate onChange={this.handleChange} size="small" 
+                                    style={{ padding: 9, paddingLeft: 20 }}  
+                                />
+                            </div>
+                            <button className="btn btn-light register-button" 
+                                onClick={this.subscribe, () => { sweetalertclick(); }} 
+                                disabled={!allValid} type="submit" 
+                                style={{ width: '50%' }}>
+                                    Subscribe
+                            </button>
+                        </form>
+
+                        
+                        <Modal show={this.state.show} >
+                            <Modal.Header style={{ fontWeight: 'bold', paddingLeft: '2rem' }} >Why Subscribe?</Modal.Header>
+                            <Modal.Body>
+                                Updates from your local communities, 
+                                information regarding any of our ongoing campaigns,
+                                news related to any upcoming events, 
+                                any new features that have been added to the webpage, and much more. So what are you waiting for? 
+                                Sign up now!
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <Button onClick={() => { this.handleModal() }}>
+                                    Close
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
+                    </div>
+                </div>
             </div>
         );
     }

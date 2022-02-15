@@ -9,7 +9,7 @@ const ArticleCard = (props) => {
             {article.map((article, index) => (
                 <Carousel.Item key={index + 1}>
                     <a href={article.url} style={{ cursor: "pointer" }}>
-                        <div className="col article-card-container" style={{ borderRadius: 30, cursor: "pointer", background: `linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.8)), url(${article.urlToImage})`, backgroundPosition: "center", backgroundSize: "270%" }}>
+                        <div className="col article-card-container" style={{ borderRadius: 30, cursor: "pointer", backgroundColor: "#000", background: `linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1)), url(${article.urlToImage})`, backgroundPosition: "center", backgroundSize: "270%" }}>
                             <div className="row" style={{ position: "absolute", cursor: "pointer", bottom: 0, borderBottomRightRadius: 30, borderBottomLeftRadius: 30 }}>
                                 <div className="row">
                                     <a style={{ color: '#b4d6ff', cursor: 'pointer', display: "inline-block", fontWeight: 400, paddingBottom: 5, textDecoration: 'none' }} href={article.url}>{article.source.name}</a>

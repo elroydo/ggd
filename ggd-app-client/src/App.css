@@ -12,73 +12,86 @@
   min-height: 100vh;
   margin: 0 auto;
   max-width: 1296px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background: #ffffffa8;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  margin: 6.6rem 0;
+  padding: 3.3rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .page-heading {
+  margin-top: -6rem;
+  font-size: 7em;
+  font-weight: 1000;
   text-align: center;
-}
-
-.mission-statement {
-  width: 70%;
-  margin: 0 auto;
-  background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  font-size: 2.3rem;
-  text-align: center;
-  margin-top: 4rem;
-  padding: 3vh;
-  border-radius: 30px;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-}
-
-.united-nations-sustainable-development-goals {
-  margin: 0 auto;
-  width: 50%;
-  opacity: 1;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  margin-top: 4rem;
-  padding: 3vh;
-  border-radius: 30px;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  animation: show 1s steps(24, end);
 }
 
 .un-logo {
-  height: 10vh;
-  margin: 0 auto;
   background-image: url("./Images/unsdg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  height: 6rem;
+}
+
+.sustainable-goals {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .sustainable-goal {
-  margin: 0 auto;
-  margin: 2vh;
-  width: 8vmax;
-  height: 8vmax;
+  width: 80%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: inline-block;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-.subscribe-container {
-  width: 50%;
-  margin: 0 auto;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  font-size: 1.9rem;
-  text-align: center;
-  margin-top: 4rem;
-  padding: 5vh;
-  border-radius: 30px;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+.mission-statement {
+  margin: auto;
+  max-width: 60rem;
+  min-height: 100vh;
+}
+
+.mission-statement > .main-container {
+  padding: 2rem;
+}
+
+.news-articles {
+  padding: 0 1rem;
+  row-gap: 1.3rem;
+}
+
+.subscribe {
+  margin: auto;
+  max-width: 44rem;
+}
+
+.subscribe > .main-container {
+  padding: 2rem;
 }
 
 .newsletter-info-button * {
@@ -90,16 +103,6 @@
 .newsletter-info-button:hover {
   cursor: pointer;
   color: #555555;
-}
-
-.home-news-carousel-container {
-  margin-top: 4rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  padding: 5vh;
-  border-radius: 30px;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
 }
 
 .bg {
@@ -134,38 +137,6 @@
   opacity: 1;
   background-size: 210vh;
   animation-duration: 30s;
-}
-
-.more-content-wrapper {
-  padding-top: 5rem;
-}
-
-.scroll-down-arrow {
-  padding: 0.7rem;
-  width: 1.3em;
-  height: 1.3em;
-  cursor: pointer;
-  font-size: 3em;
-  color: white;
-  border-radius: 50%;
-  animation: float 6s ease-in-out infinite;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  opacity: 0.8;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s  ease-in-out;
-}
-
-.scroll-down-arrow > path {
-  cursor: pointer;
-}
-
-.scroll-down-arrow:hover {
-  opacity: 1;
 }
 
 .not-found {
@@ -232,5 +203,31 @@
   }
   100% {
     transform: translatey(0px);
+  }
+}
+
+@media (max-width: 1296px){
+  .main {
+    font-size: large;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .main {
+    font-size: medium;
+  }
+
+  .page-heading {
+    font-size: 5rem;
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 768px){
+  .main {
+    font-size: small;
+    padding: 1rem;
   }
 }

@@ -1,14 +1,22 @@
+.news-container {
+  padding-top: 9rem;
+}
+
 .news {
-  padding-top: 30px;
   display: flex;
   margin: 0 auto;
   width: 90%;
+  text-align: left;
 }
 
 .news-content-header {
   color: #202124;
   font-size: 1.30rem;
   letter-spacing: -0.25px;
+}
+
+.news-carousel-container {
+  padding: 6rem 0;
 }
 
 .article-container {

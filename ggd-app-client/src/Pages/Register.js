@@ -137,88 +137,86 @@ class Register extends Component {
         const { formError, allValid } = this.state;
 
         return (
-            <div className="main">
+            <div className="main content-container register">
                 <div className="page-heading" style={{ paddingTop: 30, paddingBottom: 10 }}>
                     <h3 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Sign Up</h3>
                     <h6>Create your GGD Account</h6>
                 </div>
                 <br />
-                <div className="main2" style={{ margin: "auto", width: "20vw", textAlign: "center" }}>
-                    <form onSubmit={this.handleSubmit} noValidate>
-                        <div className="username" style={{ marginBottom: 10 }}>
-                            {formError.username.length > 0 && (
-                                <span className="error-message">{formError.username}</span>
-                            )}
-                            <input
-                                className={`form-control register-input ${formError.username.length > 0 ? "error" : ""}`}
-                                placeholder="Username"
-                                type="text"
-                                name="username"
-                                noValidate
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className="password" style={{ "margin-bottom": 10 }}>
-                            {formError.password.length > 0 && (
-                                <span className="error-message">{formError.password}</span>
-                            )}
-                            <input
-                                className={`form-control register-input ${formError.password.length > 0 ? "error" : ""}`}
-                                placeholder="Password"
-                                type="password"
-                                name="password"
-                                noValidate
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className="email" style={{ "margin-bottom": 10 }}>
-                            {formError.email.length > 0 && (
-                                <span className="error-message">{formError.email}</span>
-                            )}
-                            <input
-                                className={`form-control register-input ${formError.email.length > 0 ? "error" : ""}`}
-                                placeholder="Email"
-                                type="email"
-                                name="email"
-                                noValidate
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className="forename" style={{ "margin-bottom": 10 }}>
-                            {formError.forename.length > 0 && (
-                                <span className="error-message">{formError.forename}</span>
-                            )}
-                            <input
-                                className={`form-control register-input ${formError.forename.length > 0 ? "error" : ""}`}
-                                placeholder="Forename"
-                                type="text"
-                                name="forename"
-                                noValidate
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className="surname" style={{ "margin-bottom": 20 }}>
-                            {formError.surname.length > 0 && (
-                                <span className="error-message">{formError.surname}</span>
-                            )}
-                            <input
-                                className={`form-control register-input ${formError.surname.length > 0 ? "error" : ""}`}
-                                placeholder="Surname"
-                                type="text"
-                                name="surname"
-                                noValidate
-                                onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className="create-account">
-                            <button className="btn btn-light register-button" type="button" onClick={this.handleSubmit} disabled={!allValid}>Create Account</button>
-                            <p style={{ lineHeight: "2rem" }}>
-                                Already a member?{" "}
-                                <a href="/sign-in" className="sign-up-link">Sign in</a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
+                <form onSubmit={this.handleSubmit} noValidate>
+                    <div className="username" style={{ marginBottom: 10 }}>
+                        {formError.username.length > 0 && (
+                            <span className="error-message">{formError.username}</span>
+                        )}
+                        <input
+                            className={`form-control register-input ${formError.username.length > 0 ? "error" : ""}`}
+                            placeholder="Username"
+                            type="text"
+                            name="username"
+                            noValidate
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="password" style={{ "margin-bottom": 10 }}>
+                        {formError.password.length > 0 && (
+                            <span className="error-message">{formError.password}</span>
+                        )}
+                        <input
+                            className={`form-control register-input ${formError.password.length > 0 ? "error" : ""}`}
+                            placeholder="Password"
+                            type="password"
+                            name="password"
+                            noValidate
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="email" style={{ "margin-bottom": 10 }}>
+                        {formError.email.length > 0 && (
+                            <span className="error-message">{formError.email}</span>
+                        )}
+                        <input
+                            className={`form-control register-input ${formError.email.length > 0 ? "error" : ""}`}
+                            placeholder="Email"
+                            type="email"
+                            name="email"
+                            noValidate
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="forename" style={{ "margin-bottom": 10 }}>
+                        {formError.forename.length > 0 && (
+                            <span className="error-message">{formError.forename}</span>
+                        )}
+                        <input
+                            className={`form-control register-input ${formError.forename.length > 0 ? "error" : ""}`}
+                            placeholder="Forename"
+                            type="text"
+                            name="forename"
+                            noValidate
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="surname" style={{ "margin-bottom": 20 }}>
+                        {formError.surname.length > 0 && (
+                            <span className="error-message">{formError.surname}</span>
+                        )}
+                        <input
+                            className={`form-control register-input ${formError.surname.length > 0 ? "error" : ""}`}
+                            placeholder="Surname"
+                            type="text"
+                            name="surname"
+                            noValidate
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="create-account">
+                        <button className="btn btn-light register-button" type="button" onClick={this.handleSubmit} disabled={!allValid}>Create Account</button>
+                        <p style={{ lineHeight: "2rem" }}>
+                            Already a member?{" "}
+                            <a href="/sign-in" className="sign-up-link">Sign in</a>
+                        </p>
+                    </div>
+                </form>
             </div>
 
         );

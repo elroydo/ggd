@@ -49,7 +49,7 @@ class News extends Component {
         //initialise specific variables based on the states
         const { articlesClimate, articlesDisaster, articlesWater, articlesLand, newsAPIError, userBookmarks } = this.state;
         return (
-            <div className="main">
+            <div className="main news-container">
                 <h2 className="page-heading" style={{ fontSize: '2.5rem', fontWeight: 'bold', paddingTop: 30 }}> What is happening around the world? </h2>
                 {!Auth.isAuthenticated() &&
                     <div className="bookmark-login">
@@ -63,11 +63,12 @@ class News extends Component {
                     </div>
                 }
                 <Carousel
+                    className="news-carousel-container"
                     nextIcon={""}
                     prevIcon={""}
                     nextLabel={<button className="btn btn-outline-success news-button news-button-right" style={{ position: 'absolute', top: 30, left: 0, borderRadius: '50%' }} type="button">&#10148;</button>}
                     prevLabel={<button className="btn btn-outline-success news-button news-button-left" style={{ position: 'absolute', top: 30, right: 0, borderRadius: '50%' }} type="button">&#10148;</button>}
-                    indicators={true}
+                    indicators={false}
                     pause={'hover'}
                     fade={true}
                 >

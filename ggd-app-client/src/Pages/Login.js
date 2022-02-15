@@ -155,79 +155,77 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="main">
+      <div className="main content-container login">
         <div className="page-heading" style={{ paddingTop: 30, paddingBottom: 10 }}>
           <h3 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Sign In</h3>
           <h6>Use your GGD Account</h6>
         </div>
         <br />
-        <div className="main2" style={{ margin: "auto", width: "20vw", textAlign: "center" }}>
-          <FormErrors formErrors={this.state.formErrors} />
-          {this.state.detailsWrong === true && <p style={{ backgroundColor: '#fdaaaa', color: '#5F2A2A', borderRadius: '30px', marginBottom: '1rem', padding: '1rem' }}>Your login details are incorrect, please try again</p>}
-          <form>
-            <div className="input-group" style={{ marginBottom: 10 }}>
-              <input
-                type="text"
-                class="form-control login-input"
-                id="inlineFormInputGroupUsername"
-                placeholder="Username"
-                name="username"
-                value={this.state.username}
-                onChange={this.handleChange}
-                required
-                autofocus
-              ></input>
+        <FormErrors formErrors={this.state.formErrors} />
+        {this.state.detailsWrong === true && <p style={{ backgroundColor: '#fdaaaa', color: '#5F2A2A', borderRadius: '30px', marginBottom: '1rem', padding: '1rem' }}>Your login details are incorrect, please try again</p>}
+        <form>
+          <div className="input-group" style={{ marginBottom: 10 }}>
+            <input
+              type="text"
+              class="form-control login-input"
+              id="inlineFormInputGroupUsername"
+              placeholder="Username"
+              name="username"
+              value={this.state.username}
+              onChange={this.handleChange}
+              required
+              autofocus
+            ></input>
+          </div>
+          <div style={{ marginBottom: 20 }}>
+            <input
+              type="password"
+              class="form-control login-input"
+              placeholder="Password"
+              name="password"
+              value={this.state.password}
+              onChange={this.handleChange}
+              required
+            ></input>
+          </div>
+          <div>
+          </div>
+          <div>
+            <button
+              style={{ width: "20vw" }}
+              className="btn btn-light login-button"
+              onClick={this.login}
+              type="button"
+              disabled={!this.state.formValid}
+            >
+              Login
+            </button>
+            <div className="login-divider">
+              <div className="line-login-divider"></div>
+              <div className="or-login-divider">OR</div>
+              <div className="line-login-divider"></div>
             </div>
-            <div style={{ marginBottom: 20 }}>
-              <input
-                type="password"
-                class="form-control login-input"
-                placeholder="Password"
-                name="password"
-                value={this.state.password}
-                onChange={this.handleChange}
-                required
-              ></input>
-            </div>
-            <div>
-            </div>
-            <div>
-              <button
-                style={{ width: "20vw" }}
-                className="btn btn-light login-button"
-                onClick={this.login}
-                type="button"
-                disabled={!this.state.formValid}
-              >
-                Login
-              </button>
-              <div className="login-divider">
-                <div className="line-login-divider"></div>
-                <div className="or-login-divider">OR</div>
-                <div className="line-login-divider"></div>
+            <div className="other-login-container">
+              <div className="google-sign-in" style={{ marginBottom: 10 }}>
+                <div id="loginButton" style={{ width: 'auto' }}>Sign in with Google</div>
               </div>
-              <div className="other-login-container">
-                <div className="google-sign-in" style={{ marginBottom: 10 }}>
-                  <div id="loginButton" style={{ width: 'auto' }}>Sign in with Google</div>
-                </div>
-                <div>
-                  <FacebookLogin
-                    className="btn btn-light login-button"
-                    appId="424474105295536"
-                    autoLoad={false}
-                    fields="name,email,picture"
-                    onClick={this.componentClicked}
-                    callback={this.responseFacebook} />
-                </div>
+              <div>
+                <FacebookLogin
+                  className="btn btn-light login-button"
+                  appId="424474105295536"
+                  autoLoad={false}
+                  fields="name,email,picture"
+                  onClick={this.componentClicked}
+                  callback={this.responseFacebook} />
               </div>
             </div>
-          </form>
+          </div>
+        </form>
 
-          <p style={{ lineHeight: "2rem" }}>
-            Not a member?{" "}
-            <a href="/sign-up" className="sign-in-link">Sign Up</a>
-          </p>
-        </div>
+        <p style={{ lineHeight: "2rem" }}>
+          Not a member?{" "}
+          <a href="/sign-up" className="sign-in-link">Sign Up</a>
+        </p>
       </div>
     );
   }

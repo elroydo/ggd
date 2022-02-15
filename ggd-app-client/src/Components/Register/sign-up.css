@@ -1,3 +1,8 @@
+.register {
+    max-width: 30rem;
+    margin-top: -9rem;
+}
+
 .register-input {
     border-radius: 30px;
     padding: 7px;
